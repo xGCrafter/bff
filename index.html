@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangalore Fashion Factory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+  <!-- Cursor -->
+  <div class="custom-cursor"></div>
+  
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+      </div>
+      
+      <div class="logo-container">
+        <h1>BANGALORE<span>FASHION</span><span>FACTORY</span></h1>
+      </div>
+      
+      <div class="header-actions">
+        <button class="icon-button search-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="icon-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </button>
+        <button class="icon-button cart-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <button class="nav-button active" data-category="all">All</button>
+    <button class="nav-button" data-category="new">New Arrivals</button>
+    <button class="nav-button" data-category="trending">Trending</button>
+    <button class="nav-button" data-category="sale">Sale</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2 class="hero-title">Festive <span>Elegance</span> 2025</h2>
+      <p class="hero-subtitle">Discover the latest trends in fashion</p>
+      <button class="hero-button" onclick="document.querySelector('.collection-section').scrollIntoView({ behavior: 'smooth' })">Explore Collection</button>
+    </div>
+    
+    <!-- Scrolling Image Section --> 
+    <div class="scrolling-section">
+      <div class="scrolling-images">
+        <div class="image-container active">
+          <img src="image1.jpg" alt="Fashion 1">
+          <div class="image-overlay"></div>
+        </div>
+        <div class="image-container">
+          <img src="image2.jpg" alt="Fashion 2">
+          <div class="image-overlay"></div>
+        </div>
+        <div class="image-container">
+          <img src="image3.jpg" alt="Fashion 3">
+          <div class="image-overlay"></div>
+        </div>
+        <div class="image-container">
+          <img src="image4.jpg" alt="Fashion 4">
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+      
+      <div class="slider-controls">
+        <button class="slider-arrow prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        </button>
+        <div class="image-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+        </div>
+        <button class="slider-arrow next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section class="featured-categories">
+    <div class="category-item">
+      <div class="category-image">
+        <img src="category1.jpg" alt="Women's Fashion">
+      </div>
+      <h3>Women</h3>
+    </div>
+    <div class="category-item">
+      <div class="category-image">
+        <img src="category2.jpg" alt="Men's Fashion">
+      </div>
+      <h3>Men</h3>
+    </div>
+    <div class="category-item">
+      <div class="category-image">
+        <img src="category3.jpg" alt="Accessories">
+      </div>
+      <h3>Accessories</h3>
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section class="collection-section">
+    <div class="section-header">
+      <h2 class="section-title">Our Collections</h2>
+      <p class="section-subtitle">Discover our carefully curated pieces</p>
+    </div>
+    
+    <div class="catalog-section">
+      <div class="catalog-item">
+        <div class="catalog-image">
+          <img src="catalog1.jpg" alt="Summer Collection">
+          <div class="item-overlay">
+            <button class="quick-view">Quick View</button>
+          </div>
+          <div class="item-tag">New</div>
+        </div>
+        <div class="catalog-info">
+          <h3>Summer Elegance</h3>
+          <p class="item-price">₹1,800</p>
+          <div class="color-options">
+            <span class="color-option" style="background-color: #D4C5B3;"></span>
+            <span class="color-option" style="background-color: #333333;"></span>
+            <span class="color-option" style="background-color: #6B8E9F;"></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="catalog-item">
+        <div class="catalog-image">
+          <img src="catalog2.jpg" alt="Winter Essentials">
+          <div class="item-overlay">
+            <button class="quick-view">Quick View</button>
+          </div>
+        </div>
+        <div class="catalog-info">
+          <h3>Set - Pure Cotton Kurti With Palazzo</h3>
+          <p class="item-price">₹1,950</p>
+          <div class="color-options">
+            <span class="color-option" style="background-color: #8C7A6B;"></span>
+            <span class="color-option" style="background-color: #333333;"></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="catalog-item">
+        <div class="catalog-image">
+          <img src="catalog3.jpg" alt="Formal Wear">
+          <div class="item-overlay">
+            <button class="quick-view">Quick View</button>
+          </div>
+          <div class="item-tag sale">Sale</div>
+        </div>
+        <div class="catalog-info">
+          <h3>Modal Kurti</h3>
+          <p class="item-price"><span class="original-price">₹4,299</span> ₹1,350</p>
+          <div class="color-options">
+            <span class="color-option" style="background-color: #333333;"></span>
+            <span class="color-option" style="background-color: #5D6970;"></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="catalog-item">
+        <div class="catalog-image">
+          <img src="catalog4.jpg" alt="Casual Styles">
+          <div class="item-overlay">
+            <button class="quick-view">Quick View</button>
+          </div>
+        </div>
+        <div class="catalog-info">
+          <h3>Georgette Kurti with Inner</h3>
+          <p class="item-price">₹1,100.00</p>
+          <div class="color-options">
+            <span class="color-option" style="background-color: #D4C5B3;"></span>
+            <span class="color-option" style="background-color: #8C7A6B;"></span>
+            <span class="color-option" style="background-color: #333333;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="view-more-container">
+      <button class="view-more-button">View More</button>
+    </div>
+  </section>
+
+  <!-- Quick View Modal -->
+  <div class="modal" id="quick-view-modal">
+    <div class="modal-content">
+      <span class="modal-close">×</span>
+      <div class="modal-image">
+        <img src="" alt="Product">
+      </div>
+      <div class="modal-info">
+        <h3 class="modal-title"></h3>
+        <p class="modal-price"></p>
+        <div class="modal-colors"></div>
+        <div class="modal-buttons">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="whatsapp-catalog">View on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="modal search-modal" id="search-modal">
+    <div class="modal-content search-modal-content">
+      <span class="modal-close search-modal-close">×</span>
+      <input type="text" id="search-input" placeholder="Search collections...">
+      <ul id="search-results"></ul>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div class="modal cart-modal" id="cart-modal">
+    <div class="modal-content cart-modal-content">
+      <span class="modal-close cart-modal-close">×</span>
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <p id="cart-total">Total: ₹0</p>
+      <button class="checkout-button">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Bangalore Fashion Factory</h3>
+        <p>Elevating style since 2010. Our curated collections bring the latest trends to your wardrobe with quality and elegance.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="http://instagram.com/blr.fashion.factory" class="social-icon">
+            <svg xmlns="http://www
+
+.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="https://wa.me/p/8093040217429613/919148265505">Accessories</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="https://chat.whatsapp.com/JB4mgavtCPILyCJattlEd8">Customer Service</a></li>
+          <li><a href="https://chat.whatsapp.com/JB4mgavtCPILyCJattlEd8">Returns & Exchanges</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <address>
+          <p>GR Sun Villas</p>
+          <p>Huskur, Bangalore, Karnataka</p>
+          <p>India</p>
+          <p>Email: blr.ff.2020@gmail.com</p>
+          <p>Phone: +91 97400 03659</p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2020 Bangalore Fashion Factory. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <p class="vibe-code">A VIBE CODE PROJECT</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
